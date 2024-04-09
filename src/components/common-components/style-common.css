@@ -1,0 +1,81 @@
+.custom-input{
+    padding: .5rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.custom-btn{
+    padding: .5rem;
+    border-radius: 5px;
+    background-color: rgb(229,70,92);
+    color: white;
+    border: none;
+    font-size: large;
+
+}
+
+.card-1 {
+    margin-top: 5rem;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: .1px solid;
+    width: 10rem;
+    transition: all ease .3s;
+    background-color: white;
+}
+
+.card-1:hover ,.card-2:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgb(176, 175, 175);
+}
+
+.card-1 h4 .card-3 h4{
+    font-weight: 400;
+    color: rgb(229,70,92);
+}
+
+.card-2{
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: .1px solid;
+    width: 15rem;
+    text-align: center;
+    transition: all ease .3s;
+}
+
+.card-2 h3{
+    color: rgb(229,70,92);
+}
+
+
+.card-3{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px rgb(132, 130, 130);
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.card-3 li{
+    padding: .5rem;
+}
+
+.card-3 h2{
+    color: rgb(229,70,92);
+    font-size: xx-large;
+    font-weight: 400;
+    
+}
+
+
+

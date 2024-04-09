@@ -1,0 +1,359 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    padding-inline: 5rem;
+    align-items: center;
+    z-index: 1;
+    
+}
+
+.navbar a{
+    color: black;
+}
+
+.active{
+    color: rgb(229,70,92) !important;
+}
+.navbar h1{
+    font-size: 2rem;
+}
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+ul{
+    list-style: none;
+}
+
+.hero{
+    position: relative;
+}
+
+.heroImg{
+    position: absolute;
+    top:-2rem;
+    left:0rem;
+    z-index: -1;
+    /* height: 100rem; */
+    /* height: 50vw; */
+}
+
+.heroText{
+    width: 60%;
+    padding-top: 15rem;
+    padding-left: 3rem;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+
+
+
+.phone{
+    position: absolute;
+    right: 100px;
+    top:150px;
+    width: 15rem;
+    transition: all ease .3s;
+}
+
+.phone:hover, .phone-2:hover{
+    /* width: 15.3rem; */
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.features{
+    margin-top: 3rem;
+    display:flex ;
+    flex-direction:column;
+    align-items: center;
+
+}
+
+.love-card h3{
+    color: black !important; 
+}
+
+.work{
+    position: relative;
+    margin-top: 1rem;
+}
+
+.work-back{
+    position: absolute;
+    width:100vw;
+    height: 45rem;
+    z-index: -1;
+}
+
+
+.flex-section{
+    display: flex;
+    height: 45rem;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 5rem; */
+    gap: 3rem;
+}
+.phone-2{
+    width: 20%;
+    transition: all .3s ease;
+}
+
+
+.checks{
+    display: grid;
+    grid-template-columns: 400px 400px;
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 3rem;
+    padding-left: 0rem;
+}
+.check:hover h3{
+    transition: all .3s ease;
+    color: rgb(229,70,92)  ;;
+}
+
+
+.check h1{
+    color:rgb(229,70,92)  ;
+}
+
+
+/* .work-text{
+    position: absolute;
+    top: 5rem;
+    left: 35rem;
+} */
+
+.screenshots{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.screenshots h3{
+    font-size: xx-large;
+}
+
+
+/* play button css */
+
+.video-play-button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    width: 32px;
+    height: 44px;
+    /* background: #fa183d; */
+    border-radius: 50%;
+    padding: 18px 20px 18px 28px;
+  }
+  
+  .video-play-button:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #ba1f24;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+  }
+  
+  .video-play-button:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #fa183d;
+    border-radius: 50%;
+    transition: all 200ms;
+  }
+  
+  .video-play-button:hover:after {
+    background-color: darken(#fa183d, 10%);
+  }
+  
+  .video-play-button img {
+    position: relative;
+    z-index: 3;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  
+  .video-play-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 32px solid #fff;
+      border-top: 22px solid transparent;
+      border-bottom: 22px solid transparent;
+  }
+  
+  @keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+    }
+  }
+  
+  
+  .overview{
+    position: relative;
+  }
+  .video-overlay {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.80);
+    opacity: 0;
+    transition: all ease 500ms;
+  }
+  
+  .video-overlay.open {
+    position: absolute;
+    z-index: 1000;
+    opacity: 1;
+  }
+  
+  .video-overlay-close {
+    position: absolute;
+    z-index: 1000;
+    top: 15px;
+    right: 20px;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 200ms;
+  }
+  
+  .video-overlay-close:hover {
+    color: #fa183d;
+  }
+  
+  .video-overlay iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    /* width: 90%; */
+    /* height: auto; */
+    box-shadow: 0 0 15px rgba(0,0,0,0.75);
+  }
+
+  .overview{
+    margin-top: 3rem;
+  }
+  .overview-text{
+    position:absolute; 
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    color: white;
+    font-size: xx-large;
+    align-items: center;
+    font-weight: 100 !important;
+  }
+
+  .overview-img{
+    width: 100vw;
+  }
+
+  #home, #page,#features,#screenshot{
+    scroll-behavior: smooth;
+  }
+
+  .priceing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 3rem;
+    background-color: rgb(246,246,254);
+    text-align: center;
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(229,70,92);
+    padding: .5rem;
+    color: white;
+  }
+
+  .subscribe{
+    background-color: rgb(246,246,254);
+
+  }
+
+  .dome{
+    background: linear-gradient(to bottom, rgb(21,43,56), rgb(43,61,81)) ;
+    width: 100%;
+    /* height: 600px; */
+    border-radius: 50% 50% 0% 0%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .dome h2{
+    font-size: xx-large;
+    color:rgb(229,70,92);;
+  }
+
+  .dome p{
+    width: 30rem;
+    color: white;
+  }
